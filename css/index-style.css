@@ -1,0 +1,63 @@
+.idade{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.box-idade{
+
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: var(--color-black);
+    width: 450px;
+
+}
+
+.box-idade-paragrafo{
+
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+
+.box-idade-input{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 70%;
+    margin: 10px auto;
+
+    input{
+
+        padding: 15px;
+        border: solid 1.5px var(--color-vine);
+        border-radius: 5px;
+
+    }
+
+    input:focus{
+
+        outline: none;
+    }
+
+    button{
+
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--color-vine);
+        color: var(--color-white);
+        cursor: pointer;
+
+    }
+
+}
