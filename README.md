@@ -2,8 +2,8 @@
 
 ## Colaboradores
 
--João Pedro Lopes
--Lorenzzo Dias
--Pedro Ferronato
--Miguel Marques
--Gabriel Vanucci
+- João Pedro Lopes
+- Lorenzzo Dias
+- Pedro Ferronato
+- Miguel Marques
+- Gabriel Vanucci
