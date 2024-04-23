@@ -14,36 +14,42 @@
     
     <!-- Página inicial - Idade -->
 
-    <main>
+    <div class="container">
 
-
-        <section class="idade">
-
-            <div class="box-idade">
-
-                <div class="box-idade-paragrafo">
-
-                    <h1>Vinheria Agnello</h1>
-
-                    <p>Para acessar o site você precisa ser maior de 18 anos.</p>
-
-                </div>
-
-                <div class="box-idade-input">
-
-                    <input id="input-idade" type="number" placeholder="Digite sua idade">
-
-                    <button onclick="validarIdade()">Confirmar</button>
-
-                </div>
-
+        <header>
+            <div class="cabecalho">
+                <h1 class="titulo-header">Vinheria Agnello</h1>
             </div>
+        </header>
 
-        </section>
+        <main>
+
+            <section class="idade">
+
+                <div class="box-idade">
+
+                    <div class="box-idade-paragrafo">
+
+                        <p>Verifique sua idade</p>
+
+                    </div>
+
+                    <div class="box-idade-input">
+
+                        <input id="input-idade" type="number" placeholder="Digite sua idade">
+
+                        <button onclick="validarIdade()">Confirmar</button>
+
+                    </div>
+
+                </div>
+
+            </section>
 
 
-    </main>
+        </main>
 
+    </div>
 
     <script src="./script/idade.js"></script>
 

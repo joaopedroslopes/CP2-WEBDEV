@@ -11,7 +11,23 @@
 body{
 
     font-family: 'Poppins', sans-serif;
-    background-color: var(--color-vine);
     color: var(--color-white);
+
+}
+
+.container {
+
+    background-image: linear-gradient( to top, rgba(0, 0, 0, .8), 
+    rgba(0, 0, 0, .3)),
+    url(../images/background.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.cabecalho{
+
+    padding: 15px 25px;
 
 }
