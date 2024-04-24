@@ -1,0 +1,18 @@
+.pagina-sugestao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.nome-queijo{
+    color: white;
+    font-size: 40px;
+}
+.paragrafo{
+    gap: 10px;
+    text-wrap: wrap;
+}
+.opçao{
+    display: flex;
+    justify-content: flex-start;
+}
