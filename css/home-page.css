@@ -53,3 +53,41 @@
     font-size: 3em;;
 
 }
+
+.cabecalho {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cabecalho-direito {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 20px;
+
+}
+
+.pLogado {
+
+    display: none;
+
+}
+
+.cabecalho-direito a{
+
+    text-decoration: none;
+    color: var(--color-white);
+
+    &:hover{
+
+        color: var(--color-vine);
+        transition: 0.3s;
+
+    }
+
+}

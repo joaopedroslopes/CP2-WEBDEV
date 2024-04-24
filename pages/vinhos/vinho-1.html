@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinheria Agnello - Vinho 1</title>
 
-    <link rel="stylesheet" href="/wine.css">
-    <link rel="stylesheet" href="/variables.css">
-
-    <script src="../../scripts/vinhos.js"></script>
+    <link rel="stylesheet" href="../../css/wine.css">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
 </head>
+
 <body>
-    <div class="conteudo">
-    
 
-    <main>
+    <div class="container">
 
+        <div class="conteudo">
 
-        <section class="pagina-vinho">
-
-            <img src="/images-vinicola/garrafas/vinho3.png" alt="Vinho 1">
-
-            <div class="infos-vinho">
-
-                <h2 class="nome-vinho">Vinho 1</h2>
-
-                <h3>R$40,00</h3>
-                <input type="number" class="qtdvinho" placeholder="Insira a quantidade...">
-                <button onclick="AddCarrinho()" class="add_carrinho">Adicionar ao carrinho</button>
-                <input type="number" class="cupom" placeholder="Insira o cupom...">
-                <button onclick="AddCupom()" class="add_cupom">Adicionar Cupom</button>
-
-                <h4>Descrição do vinho:</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quod fugiat repudiandae praesentium recusandae debitis ipsam, itaque magni! Ad, atque soluta? Consequatur dicta laboriosam minima! Possimus repudiandae impedit, consectetur unde porro laudantium ipsa incidunt rem nam fugit deleniti. Tempora, consequuntur?</p>
-                <a href="">Veja nossas sugestões para seu vinho</a>
-
-            </div>
-
-        </section>
+            <main>
 
 
-    </main>
+                <section class="pagina-vinho">
 
+                    <img class="img-vinho" src="../../images/vinho2.png" alt="Vinho 1">
+
+                    <div class="infos-vinho">
+
+                        <h2 class="nome-vinho">Vinho 1</h2>
+
+                        <h3>R$40,00</h3>
+
+                        <div class="input-quantidade">
+                            <input type="number" class="qtdvinho" placeholder="Insira a quantidade..." min="0">
+                            <button onclick="AddCarrinho()" class="add_carrinho">Adicionar ao carrinho</button>
+                        </div>
+
+                        <div class="input-cupom">
+                            <input type="number" class="cupom" placeholder="Insira o cupom..." min="0">
+                            <button onclick="AddCupom()" class="add_cupom">Adicionar Cupom</button>
+                        </div>
+
+                        <h4>Descrição do vinho:</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quod fugiat repudiandae
+                            praesentium recusandae debitis ipsam, itaque magni! Ad, atque soluta? Consequatur dicta
+                            laboriosam minima! Possimus repudiandae impedit, consectetur unde porro laudantium ipsa
+                            incidunt rem nam fugit deleniti. Tempora, consequuntur?</p>
+
+                        <a href="">Veja nossas sugestões para seu vinho</a>
+
+                    </div>
+
+                </section>
+
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <script src="../../script/carrinho.js"></script>
 
 </body>
+
 </html>

@@ -1,8 +1,10 @@
 :root{
 
     --color-white: #fff;
+    --color-dark-white: #aeaeae;
     --color-black: #000;
     --color-vine: #410d28;
+    --color-light-vine: #8c0e25;
     --color-dark-green: #074a19;
 
 }
