@@ -1,0 +1,133 @@
+.popup-box-login{
+
+    display: none;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 450px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    
+
+}
+
+.popup-login{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 18vh;
+
+}
+
+.popup-content {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 300px;
+
+    h2{
+        margin-bottom: 15px;
+        font-size: 2.5rem;
+    }
+
+    input, button{
+        padding: 10px;
+        border: 1px solid var(--color-light-vine);
+        border-radius: 5px;
+    }
+
+    input:focus{
+        outline: none;
+        border: 1px solid var(--color-vine);
+    }
+
+    button{
+        border: none;
+        background-color: var(--color-light-vine);
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: var(--color-vine);
+        transition: 500ms;
+    }
+
+    textarea{
+        padding: 10px;
+        border: 1px solid var(--color-light-vine);
+        border-radius: 5px;
+    }
+    
+    textarea:focus{
+        outline: none;
+        border: 1px solid var(--color-vine);
+    }
+
+    
+
+}
+
+.popup-closer{
+    position: absolute;
+    top: 5px;
+    right: 13.5px;
+    cursor: pointer;
+    color: var(--color-black);
+    font-size: 1.5rem;
+    transition: 500ms;
+    text-align: center;
+}
+
+
+.popup-box-ctt {
+
+    display: none;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+
+
+}
+
+.popup-ctt{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+
+}
+
+.popup-content textarea{
+    
+    width: 300px;
+    height: 100px;
+    resize: none;
+    font-family: var(--font-body);
+
+}
+
+.titulo-popup{
+
+    color: var(--color-vine);
+
+}

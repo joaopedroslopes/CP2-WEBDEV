@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinheria Agnello - Home Page</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/popup.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <header>
+
+            <div class="cabecalho">
+                <div class="cabecalho-esquerdo">
+
+                    <h1 class="titulo-header">Vinheria Agnello</h1>
+
+                </div>
+
+                <div class="cabecalho-direito">
+
+                    <a onclick="btnContato()" href="#">Contato</a>
+
+                    <a onclick="btnLogin()" class="btnLogin" href="#">Fazer login</a>
+                    <p class="pLogado">Logado!</p>
+
+                </div>
+            </div>
+
+        </header>
+
+
+        <div class="popups">
+
+            <div class="popup-box-login">
+                <div class="popup-login">
+        
+                    <div onclick="closePopupLogin()" class="popup-closer">x</div>
+        
+                    <div class="popup-content">
+                        <h2 class="titulo-popup">Login</h2>
+        
+                        <input type="text" class="input-login" placeholder="Insira seu login...">
+                        <input type="password" class="input-senha" placeholder="Insira sua senha...">
+        
+                        <button onclick="Logar()" class="btnLogar">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-box-ctt">
+
+                <div class="popup-ctt">
+        
+                    <div onclick="closePopupCtt()" class="popup-closer">x</div>
+        
+                    <div class="popup-content">
+                        <h2 class="titulo-popup">Contato</h2>
+        
+                        <input type="text" class="input-nome" placeholder="Insira seu nome...">
+                        <input type="email" class="input-email" placeholder="Insira seu e-mail...">
+                        <input type="number " class="input-phone" placeholder="Insira seu telefone...">
+                        <textarea class="input-msg" placeholder="Insira sua mensagem..."></textarea>
+        
+                        <button onclick="EnviarMsg()" class="btnEnviar">Enviar</button>
+                    </div>
+                </div>
+        
+            </div>
+
+        </div>
+
+
+
+        <main class="home-page">
+
+            <div class="home-page-box">
+
+                <h2 class="titulo-home-page">
+                    Nossos Vinhos!
+                </h2>
+
+                <section class="vinhos">
+
+                    <div class="box-vinho" onclick="vinho1()">
+                            <img src="../images/vinho2.png" alt="">
+                    </div>
+
+                    <div class="box-vinho" onclick="vinho2()">
+                            <img src="../images/vinho3.png" alt="">
+                    </div>
+
+                    <div class="box-vinho" onclick="vinho3()">
+                            <img src="../images/vinho4.png" alt="">
+                    </div>
+                    
+                </section>
+                
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="../script/contato-and-login.js"></script>
+    <script src="../script/levar-pg-vinho.js"></script>
+
+</body>
+</html>
