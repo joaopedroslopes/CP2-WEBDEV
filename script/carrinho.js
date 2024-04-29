@@ -31,3 +31,32 @@ function AddCarrinho(){
     carrinho.innerText = `Carrinho: R$${total.toFixed(2)}`;
 
 }
+function AddCupom(){
+
+    var cupom = document.getElementsByClassName('cupom_desconto')[0].value;
+    var preco_vinho = document.getElementsByClassName('preco_vinho')[0];
+    var nome_vinho = document.getElementsByClassName('nome_vinho')[0].textContent;
+
+    if (cupom == 'FIAP2024') {
+
+        if (nome_vinho == 'Vinho 1'){
+            preco_vinho1 *= 0.9;
+            preco_vinho.textContent = R$$(preco_vinho1.toFixed(2));
+        } 
+        else if (nome_vinho == 'Vinho 2'){
+            preco_vinho2 *= 0.9;
+            preco_vinho.textContent = R$$(preco_vinho2.toFixed(2));
+        } 
+        else if (nome_vinho == 'Vinho 3'){
+            preco_vinho3 *= 0.9;
+            preco_vinho.textContent = R$$(preco_vinho3.toFixed(2));
+        }
+        
+        carrinho.innerText = carrinho = R$$(total.toFixed(2));
+        alert('Cupom aplicado! 10% de desconto!');
+    } 
+    else {
+        alert('Cupom inválido!');
+    }
+
+}
