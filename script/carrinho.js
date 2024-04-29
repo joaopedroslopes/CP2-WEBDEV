@@ -1,6 +1,6 @@
 // var total = localStorage.getItem('total') ? Number(localStorage.getItem('total')) : 0;
 var total = 0;
-var carrinho = document.getElementById("add_carrinho");
+var carrinho = document.getElementsByClassName('carrinho')[0];
 const preco_vinho1 = 40;
 const preco_vinho2 = 90; 
 const preco_vinho3 = 150;
@@ -28,6 +28,6 @@ function AddCarrinho(){
     localStorage.setItem('total', total);
     console.log(`Cada unidade custa R$${preco} e o total é R$${total}`)
 
-    // carrinho.innerText = `Carrinho: R$${total.toFixed(2)}`;
+    carrinho.innerText = `Carrinho: R$${total.toFixed(2)}`;
 
 }
